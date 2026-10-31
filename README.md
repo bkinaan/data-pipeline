@@ -6,7 +6,7 @@ _NOTE:_ Run the following commands under the root of the project
 
 ### Bootstrap the data
 
-Run the following command prepare the PDF Invoice data for the normalizer.
+Run the following command prepare the PDF Invoice for the gold data.
 
 > ./bootstrap
 
@@ -20,10 +20,10 @@ Split is stored under _data/split.json_.
 
 ### Run the normalizer
 
-Execute the normalizer on a randomly selected single invoice.
+Generate gold data on a randomly selected single invoice.
 
 > ./gold one
 
-Execute the normalizer on all dev txt files.
+Generate gold data on the entire dev dataset.
 
 > ./gold dev
