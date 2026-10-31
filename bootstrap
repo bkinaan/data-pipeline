@@ -1,0 +1,21 @@
+#!/bin/bash
+
+cd src/data_pipeline
+
+echo "Preparing Invoice environment"
+
+echo "Downloading dataset..."
+
+uv run -m data_pipeline.download
+
+echo "Exracting PDFs..."
+
+uv run -m data_pipeline.extract_pdfs
+
+echo "Preparing split..."
+
+uv run -m data_pipeline.split
+
+echo "Done."
+
+cd - > /dev/null

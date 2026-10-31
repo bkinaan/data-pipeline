@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+	echo "Missing first argument"
+	exit 1
+fi
+
+cd src/data_pipeline
+
+if [ "$1" == "one" ]; then
+	uv run -m data_pipeline.gold one
+elif [ "$1" == "dev" ]; then
+	uv run -m data_pipeline.gold dev
+else
+	echo "Unkown option"
+fi
+
+cd - > /dev/null

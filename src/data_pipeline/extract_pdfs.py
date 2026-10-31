@@ -1,7 +1,7 @@
 from pathlib import Path
 import pymupdf
 
-folder = Path('../../data/invoices/')
+folder = Path('../../data/CompanyDocuments/invoices/')
 files = sorted(folder.glob("*.pdf"))
 texts = {}
 out_dir = Path('../../data/interim/text')
