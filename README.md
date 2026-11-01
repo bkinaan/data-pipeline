@@ -28,7 +28,7 @@ Generate gold data on a randomly selected single invoice.
 
 `./gold one`
 
-Generate gold data on a specific single invoice
+Generate gold data on a specific single invoice.
 
 `./gold one <invoice_name_no_extension>`
 
