@@ -7,13 +7,6 @@ texts = {}
 out_dir = Path('data/interim/text')
 out_dir.mkdir(parents=True, exist_ok=True)
 
-# for file in files:
-#     with pymupdf.open(file) as doc:
-#         pages = [page.get_text() for page in doc]
-#     text = "\n\n".join(pages)
-#     texts[file.stem] = text
-
-       
 for file in files:
     with pymupdf.open(file) as doc:
         pages = [page.get_text() for page in doc]

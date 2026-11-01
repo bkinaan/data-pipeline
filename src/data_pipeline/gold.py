@@ -34,7 +34,6 @@ def parse_headers(lines: list[str]) -> dict:
 def parse_line_items(lines: list[str]) -> list[LineItem]:
     start = lines.index("Unit Price") + 1
     end = next(i for i, ln in enumerate(lines) if ln.startswith("Total"))
-    #rows = lines[start:end]
     rows = [ln for ln in lines[start:end] if not is_noise(ln)]
     
     items = []
@@ -67,9 +66,6 @@ def run_one(split: dict, stem: str | None) -> None:
     stem = stem or random.choice(split["dev"])
     print("Using", stem)
     text = (TEXT_DIR / f"{stem}.txt").read_text(encoding="utf-8")
-
-    # for i, ln in enumerate(clean_lines(text)):
-    #     print(i, repr(ln))
         
     print(parse_invoice(text).model_dump_json(indent=2))
     
