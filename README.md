@@ -1,6 +1,6 @@
 # Data Pipeline
 
-A the goal of this project is to create a deterministic parser for converting PDF invoices into normalized json objects.
+The the goal of this project is to create a deterministic parser for converting PDF invoices into normalized json objects.
 
 ## Version 1 - Invoices
 
