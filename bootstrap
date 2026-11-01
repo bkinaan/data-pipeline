@@ -1,7 +1,5 @@
 #!/bin/bash
 
-cd src/data_pipeline
-
 echo "Preparing Invoice environment"
 
 echo "Downloading dataset..."
@@ -17,5 +15,3 @@ echo "Preparing split..."
 uv run -m data_pipeline.split
 
 echo "Done."
-
-cd - > /dev/null

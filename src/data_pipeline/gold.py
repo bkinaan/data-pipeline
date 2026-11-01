@@ -9,9 +9,9 @@ import re
 
 from data_pipeline.schema import Invoice, LineItem
 
-TEXT_DIR = Path("../../data/interim/text")
-GOLD_DIR = Path("../../data/gold")
-SPLIT_FILE = Path("../../data/split.json")
+TEXT_DIR = Path("data/interim/text")
+GOLD_DIR = Path("data/gold")
+SPLIT_FILE = Path("data/split.json")
 LINE_PER_ITEM = 4
 PAGE_RE = re.compile(r"Page \d+( of \d+)?", re.IGNORECASE)
 

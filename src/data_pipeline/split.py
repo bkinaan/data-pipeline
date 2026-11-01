@@ -3,8 +3,8 @@ import json
 import random
 from pathlib import Path
 
-TEXT_DIR = Path("../../data/interim/text")
-SPLIT_FILE = Path("../../data/split.json")
+TEXT_DIR = Path("data/interim/text")
+SPLIT_FILE = Path("data/split.json")
 EVAL_SIZE = 100
 SEED = 42
 
