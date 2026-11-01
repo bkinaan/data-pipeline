@@ -8,6 +8,12 @@ _NOTE:_ Run the following commands under the root of the project
 
 ### Commands for generating parsed data
 
+#### General list of commands
+
+Run the following command to see the availble options for running this project
+
+`uv run data-pipeline`
+
 #### Bootstrap the data
 
 Run the following command prepare the PDF Invoice for the gold data.
